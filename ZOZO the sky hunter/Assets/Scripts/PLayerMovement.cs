@@ -174,15 +174,15 @@ public class PLayerMovement : MonoBehaviour {
             // Debug.Log(pos);
         }
 
-        //    if( Input.GetMouseButton(0))
-        //  {
-        //
-        //     if (!EventSystem.current.IsPointerOverGameObject())
+            if( Input.GetMouseButton(0))
+          {
+        
+            if (!EventSystem.current.IsPointerOverGameObject())
         {
-            //      pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //   }
+                  pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+              }
 
-            //   }
+               }
             if (pos.x < -3f)
             {
                // transform.Translate(new Vector3(0, pos.y * Time.deltaTime * PlayerSpeed, 0));
@@ -226,7 +226,7 @@ public class PLayerMovement : MonoBehaviour {
 
 
 
-        }
+        
     }
 
     public IEnumerator Invisibility()
